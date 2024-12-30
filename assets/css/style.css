@@ -14536,6 +14536,8 @@ xclip
   background-color: #fff;
   padding: 20px;
   border-radius: 10px;
+  height: 240px;
+  overflow: scroll;
 }
 p.prise{
   color: #014EED;
@@ -18673,11 +18675,13 @@ background-size: cover;
   padding-right: 15px;
 }
 .title-area-left-style p {
-  color: #fff;
+  color: #ffffff;
   max-width: 100%;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 500;
+  padding-right: 25px;
   text-align: right;
+  margin-bottom: 20px;
 }
 .cart-choos{
   /* position: relative; */
@@ -18738,19 +18742,29 @@ background-size: cover;
   height: 265px;
 }
 .sub-now .btn-2{
-  padding-right: 40px;
+  padding-right: 10px;
   padding-left: 40px;
+  font-size: 16px;
   background-color: #FEC961;
   margin-left: 15px;
 }
-.sub-now .btn-2:last-child{
+.sub-now .btn-2 span{
+  font-size: 16px !important;
+  font-weight: 700 !important;
+  line-height: 20px !important;
+  color: red !important;
+}
+.sub-now .btn-2 i{
+  color: #000;
+}
+/* .sub-now .btn-2:last-child{
   padding-right: 40px;
   padding-left: 40px;
   background-color: transparent;
   color: #fff;
   border: 1px solid #fff;
   margin-left: 0;
-}
+} */
 @media only screen and (min-width: 1200px) and (max-width: 1599px) {
   .title-area-left-style p br {
     display: none;
@@ -20832,7 +20846,9 @@ background-size: cover;
 .btn-gym.border-btn:hover {
   border: 1px solid #E7E7E7;
 }
-
+.why-choose-us:first-child {
+  margin: 0;
+}
 .why-choose-us {
   position: relative;
   overflow: hidden;
@@ -20842,6 +20858,10 @@ background-size: cover;
   padding: 30px;
   border-radius: 24px;
   height: 380px;
+  margin-top: 30px;
+}
+.why-choose-us:first-child{
+  margin: 0;
 }
 .why-choose-us .shape-image .shape {
   position: absolute;
@@ -23088,6 +23108,7 @@ background-size: cover;
   min-width: max-content;
   transition: 0.3s;
   height: 260px;
+  width: 300px;
 }
 @media only screen and (max-width: 767px) {
   .single-blog-list-wrapper .thumbnail img {
@@ -25688,9 +25709,11 @@ edit .quantity-edit button {
   font-size: 14px;
   border: 2px solid #FFFFFF33;
   font-weight: 500;
+  margin-left: 15px;
 }
 .bg-blue .title-area-left-style .title {
   color: #fff;
+  margin-bottom: 25px;
 }
 .title-between-area {
   display: flex;
@@ -32185,11 +32208,37 @@ header.header-three .sub-dropdown .submenu.third-lvl.base {
   font-size: 16px;
   transition: top 0.3s ease-in-out; 
 }
-
-.rts-single-course:hover .subscribe-button {
-  top: 25%;
+.cart-button {
+  position: absolute;
+  top: 32%;
+  opacity: 0;
+  right: 38%;
+  transform: translateX(-50%);
+  backdrop-filter: blur(9px);
+  background-color: #dc2626;
+  height: max-content;
+  width: max-content;
+  color: #000000;
+  padding-bottom: 2px;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 16px;
+  transition: top 0.3s ease-in-out;
+  padding-top: 10px;
+  padding-left: 7px;
+  padding-right: 8px;
 }
 
+.rts-single-course:hover .subscribe-button {
+  top: 17%;
+}
+.rts-single-course:hover .cart-button {
+  opacity: 1;
+}
+.cart-button a i{
+  color: #ededed;
+  font-size: 21px;
+}
 .rts-single-course:hover .overlay {
   opacity: 1; 
 }
@@ -33110,6 +33159,9 @@ border-radius: 28px;
   .instractor-info {
     max-width: 100%;
   }
+  .user-info {
+    display: none;
+  }
   .banner-btn-author-wrapper {
       position: absolute;
       /* max-width: 303px; */
@@ -33293,4 +33345,71 @@ border-radius: 28px;
 
 .accordion-button:not(.collapsed)::after {
   transform: rotate(-180deg);
+}
+/* .portfolio_wrap {
+  direction: rtl; 
+}
+
+.filters-button-group button {
+  text-align: right;
+} */
+ .img-user-info{
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+ }
+ .user-info {
+  position: relative;
+}
+
+.img-user-info {
+  width: 50px;
+  height: 50px; 
+  border-radius: 50%; 
+  cursor: pointer;
+}
+
+.user-details {
+  display: none;
+  position: absolute;
+  bottom: -100%;
+  right: 0px;
+  border-radius: 15px;
+  width: 290px;
+  height: max-content;
+  background: #fff;
+  border: 1px solid #ddd;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  box-sizing: border-box;
+  transition: bottom 0.3s ease-in-out;
+}
+
+.user-details p,
+.user-details a {
+  margin: 5px 0;
+}
+
+.logout-link {
+  color: red;
+  text-decoration: none;
+}
+
+.user-info.active .user-details {
+  display: block;
+  top: 60px; 
+}
+.user-name{
+  padding: 6px;
+  border: 2px solid #00000021;
+  border-radius: 11px;
+  color: #000;
+  font-size: 18px;
+  font-weight: 700;
+  padding-right: 15px;
+}
+.user-name span{
+ font-size: 12px;
+ font-weight: 500;
+ padding-left: 5px;
 }
