@@ -27,7 +27,7 @@
     <link rel="stylesheet" href="assets/css/metismenu.css">
     <!-- custom style css -->
     <link rel="stylesheet" href="assets/css/style.css">
-    <!-- <link rel="stylesheet" href="assets/css/styledark.css"> -->
+    <link rel="stylesheet" href="assets/css/styledark.css" id="dark-mode-css" disabled>
 </head>
 
 <body>
@@ -103,7 +103,7 @@
                                 
                                 <div class="dark-not">
                                     <a href=""><i class="fa-regular fa-bell"></i> <div class="dot"></div></a>
-                                    <a href=""><i class="fa-regular fa-moon"></i></a>
+                                    <a href="javascript:void(0);" id="moon-toggle"><i class="fa-regular fa-moon"></i></a>
                                 </div>
                             </div>
                             <div class="user-info">
@@ -1187,9 +1187,6 @@
     </div>
     <!-- rts backto top end -->
 
-    <!-- offcanvase search -->
-    <div id="anywhere-home" class="">
-    </div>
 
     <!-- all scripts -->
     <!-- jquery min js -->

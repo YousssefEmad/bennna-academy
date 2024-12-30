@@ -1,5 +1,14 @@
 
+const darkModeToggle = document.getElementById('moon-toggle');
+const darkModeCss = document.getElementById('dark-mode-css');
 
+darkModeToggle.addEventListener('click', function() {
+    if (darkModeCss.disabled) {
+        darkModeCss.disabled = false;
+    } else {
+        darkModeCss.disabled = true;
+    }
+});
 $(document).ready(function() {
   $('.instractor-detils-area .button[data-filter=".first"]').addClass('is-checked');
   $('.instractor-detils-area .button[data-filter=".secound"]').removeClass('is-checked');

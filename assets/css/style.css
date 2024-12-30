@@ -29906,7 +29906,7 @@ header.header-three .sub-dropdown .submenu.third-lvl.base {
 
 .login-page {
   /* height: 100vh !important; */
-  /* overflow: visible; */
+  overflow: visible;
 }
 
 .login-page-form-area {
