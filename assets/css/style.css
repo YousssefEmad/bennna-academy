@@ -88,6 +88,7 @@ html {
 
 body {
   direction: rtl;
+  text-align: right;
   font-size: var(--font-size-b2);
   line-height: var(--line-height-b2);
   -webkit-font-smoothing: antialiased;
@@ -15677,7 +15678,7 @@ nav ul li a {
   }
 }
 .pre-title-banner p{
-  width: 40%;
+  max-width: max-content;
   background-color: #ebf3fe;
   padding: 10px;
   padding-right: 22px;
@@ -17152,6 +17153,7 @@ background-size: cover;
 }
 .course-area-start{
   padding: 17px 0;
+  margin-top: 40px;
 }
 
 @media only screen and (min-width: 1200px) and (max-width: 1599px) {
@@ -29882,8 +29884,8 @@ header.header-three .sub-dropdown .submenu.third-lvl.base {
 
 .login-page-form-area {
   position: relative;
-  max-width: 488px;
-  height: 650px;
+  max-width: max-content;
+  height: max-content;
   border-radius: 35px;
   border: 1px solid #DDD8F9;
   padding: 45px;
@@ -29998,26 +30000,6 @@ header.header-three .sub-dropdown .submenu.third-lvl.base {
 .forget-wrapper{
   position: relative;
   height: 100vh;
-}
-.login-registration-wrapper::after {
-  position: absolute;
-  left: 0;
-  top: -15%;
-  width: 48%;
-  height: 115%;
-  content: "";
-  z-index: -1;
-  background: var(--color-white);
-}
-@media screen and (max-width: 1200px) {
-  .login-registration-wrapper::after {
-    width: 35%;
-  }
-}
-@media screen and (max-width: 991px) {
-  .login-registration-wrapper::after {
-    width: 100%;
-  }
 }
 .contact-thumbnail-login-p {
   text-align: center;
@@ -32364,15 +32346,18 @@ header.header-three .sub-dropdown .submenu.third-lvl.base {
   color: #0077B5;
 }
 .footer-log{
-  position: absolute;
+  /* position: absolute; */
   bottom: 25px;
   left: 5%;
-  max-width: 50%;
-  width: 600px;
+  text-align: center;
+  max-width: 100%;
+  padding-bottom: 30px;
+  /* width: 600px; */
 }
 .footer-log .foot-cont{
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 60px;
 }
 .footer-log .foot-cont a{
@@ -32549,7 +32534,7 @@ swiper-container {
 swiper-slide {
   text-align: center;
   font-size: 18px;
-  background: #fff;
+  background: transparent;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -32638,7 +32623,7 @@ swiper-slide img {
   color: #fff;
   font-size: 16px;
   font-weight: 400;
-  margin-bottom: 0;
+  margin-bottom: 40px;
 }
 .home-icon-back{
   padding-right: 10px;
@@ -32677,6 +32662,7 @@ swiper-slide img {
   color: #fff;
   padding-right: 40px;
   padding-left: 40px;
+  font-size: 14px;
   padding-top: 10px;
   padding-bottom: 10px;
   border-radius: 30px;
@@ -32808,6 +32794,7 @@ swiper-slide img {
   height: 100%;
 }
 .coupon label{
+  margin-bottom: 20px;
   color: #101828;
   font-size: 14px;
   font-weight: 700;
@@ -32931,8 +32918,10 @@ border-radius: 28px;
 }
 .form-check form label{
   color: #101828;
+  font-size: 16px;
   font-weight: 600;
   padding-right: 10px;
+  margin-top: 18px;
 }
 .dashboard-banner-area-wrapper{
   margin-top: 20px;
