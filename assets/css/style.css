@@ -9714,6 +9714,11 @@ input[type=radio] ~ label::after {
 .form-group {
   margin-bottom: 20px;
 }
+.form-group.select{
+  margin-bottom: 20px;
+    direction: rtl;
+    position: relative;
+}
 .form-group label {
   margin-bottom: 6px;
   font-size: 14px;
@@ -33412,4 +33417,14 @@ border-radius: 28px;
  font-size: 12px;
  font-weight: 500;
  padding-left: 5px;
+}
+.form-control{
+  border-radius: 35px;
+  border: 1px solid #DDD8F9;
+  background: #FFF;
+  height: 56px;
+  text-align: right;
+  padding-right: 20px;
+  font-size: 15px;
+  font-weight: 600;
 }
