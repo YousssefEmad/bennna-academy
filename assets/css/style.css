@@ -14485,6 +14485,11 @@ xclip
   height: 76px;
   width: 76px;
   border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  transition: 0.3s ease-in-out;
+}
+.cart-det:hover .img-cart img{
+transform: scale(1.07);
 }
 .header-right-area-one .actions-area .cart{
   transition: 0.3s ease-in-out;
@@ -14542,7 +14547,9 @@ xclip
   border-radius: 18px;
   padding: 15px;
   border-radius: 20px;
-  height: 210px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  height: 230px;
   overflow: auto;
 }
 p.prise{
@@ -33388,7 +33395,7 @@ border-radius: 28px;
   position: absolute;
   background-color: transparent;
   border-radius: 20px;
-  right: -15px;
+  left: -130px;
   top: 50px;
   transition: 0.3s ease-in-out;
 }
