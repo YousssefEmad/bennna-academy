@@ -14542,8 +14542,8 @@ xclip
   border-radius: 18px;
   padding: 15px;
   border-radius: 20px;
-  height: auto;
-  overflow: scroll;
+  height: 195px;
+  overflow: auto;
 }
 p.prise{
   color: #014EED;
@@ -19371,6 +19371,7 @@ background-size: cover;
   transition: 0.3s;
   width: 100%;
   height: 200px;
+  object-fit: cover;
 }
 .rts-single-course .tags-area-wrapper {
   display: flex;
@@ -32000,8 +32001,9 @@ header.header-three .sub-dropdown .submenu.third-lvl.base {
   text-align: center;
 }
 .teaam-cart img{
-  width: 80px;
-  height: 80px;
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
   border-radius: 50px;
 }
 .teaam-cart .team-text a h3{
