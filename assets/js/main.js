@@ -27,23 +27,23 @@ $(document).ready(function() {
   $('.instractor-detils-area .grid-item-p').hide();
   $('.instractor-detils-area .first').show();
 });
-document.addEventListener("DOMContentLoaded", function() {
-  const userInfo = document.querySelector(".user-info");
-  const imgUserInfo = document.querySelector(".img-user-info");
-  const userDetails = document.querySelector(".user-details");
+// document.addEventListener("DOMContentLoaded", function() {
+//   const userInfo = document.querySelector(".user-info");
+//   const imgUserInfo = document.querySelector(".img-user-info");
+//   const userDetails = document.querySelector(".user-details");
 
-  imgUserInfo.addEventListener("click", function(event) {
-      userInfo.classList.toggle("active");
+//   imgUserInfo.addEventListener("click", function(event) {
+//       userInfo.classList.toggle("active");
 
-      event.stopPropagation();
-  });
+//       event.stopPropagation();
+//   });
 
-  document.addEventListener("click", function(event) {
-      if (!userInfo.contains(event.target)) {
-          userInfo.classList.remove("active");
-      }
-  });
-});
+//   document.addEventListener("click", function(event) {
+//       if (!userInfo.contains(event.target)) {
+//           userInfo.classList.remove("active");
+//       }
+//   });
+// });
 (function ($) {
     'use strict';
     let device_width = window.innerWidth;
