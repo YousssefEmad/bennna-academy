@@ -26288,6 +26288,10 @@ edit .quantity-edit button {
 
 .course-content-wrapper-main .accordion .accordion-item .accordion-body {
   padding: 20px;
+  border: 1px solid #00000014 !important;
+  border-radius: 10px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
 }
 .course-content-wrapper-main .accordion .accordion-item .accordion-body .play-vedio-wrapper {
   display: flex;
@@ -26295,27 +26299,31 @@ edit .quantity-edit button {
   justify-content: space-between;
   padding: 14px 0;
 }
+.course-content-wrapper-main .accordion .accordion-item .accordion-body p{
+  margin-bottom: 5px;
+  font-weight: 500;
+}
 .course-content-wrapper-main .accordion .accordion-item .accordion-body .play-vedio-wrapper .left i {
   color: #110C2D;
   font-size: 18px;
   padding-left: 8px;
 }
 .course-content-wrapper-main .accordion .accordion-item .accordion-body .play-vedio-wrapper .left span {
-  color: #101828;
-  font-size: 16px;
+  color: #6d6d6d;
+  font-size: 13px;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 400;
   line-height: 26px;
   /* text-decoration-line: underline; */
 }
 .course-content-wrapper-main .accordion .accordion-item .accordion-body .play-vedio-wrapper .right .play {
   color: #014EED;
-  font-size: 14px;
+  font-size: 15px;
   background-color: #f0f5fe;
-  padding: 7px;
-  border-radius: 10px;
+  padding: 10px;
+  border-radius: 6px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 600;
   line-height: 26px;
   /* text-decoration-line: underline; */
   margin-right: 20px;
@@ -26326,7 +26334,7 @@ edit .quantity-edit button {
   display: flex;
   align-items: center;
   box-shadow: none;
-  justify-content: start;
+  justify-content: space-between;
   gap: 20px;
 }
 .course-content-wrapper-main .accordion .accordion-header button[aria-expanded=true] {
@@ -33322,7 +33330,7 @@ border-radius: 28px;
 .accordion-button::before {
   content: "+";
   left: unset;
-  right: 95%;
+  right: 99%;
   position: absolute;
   font-size: 30px;
   margin-left: 0.5rem;
@@ -33443,5 +33451,3 @@ border-radius: 28px;
   font-size: 15px;
   font-weight: 600;
 }
-
-
