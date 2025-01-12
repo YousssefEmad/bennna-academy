@@ -196,30 +196,6 @@
     </div>
     <!-- header style two End -->
 
-
-    <!-- bread crumb area -->
-    <div class="rts-bread-crumbarea-1 rts-section-gap bg_image circle">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="breadcrumb-main-wrapper">
-                        <h1 class="title">عربة المشتريات</h1>
-                        <p>هناك حقيقة مثبته من زمن طويل ان المحتوي المقروء هو مثال علي النص الغير الموجود</p>
-                        <!-- breadcrumb pagination area -->
-                        <div class="pagination-wrapper">
-                            <a href="index.html">الرئيسية</a>
-                            <i class="fa-regular fa-chevron-left"></i>
-                            <a class="active">الكورسات المتاحه</a>
-                        </div>
-                        <!-- breadcrumb pagination area end -->
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- bread crumb area end -->
-
-
     <!-- Shop area start -->
     <main class="ms-main">
         <div class="ms-page-content">
@@ -228,107 +204,65 @@
                 <div class="ms-default-page container">
                     <div class="row">
                         <div class="col-lg-8 col-12">
-                            <div class="payment-details mt-3">
-                                <form class="mt-4 mb-4 woocommerce-cart-form" action="#" method="post">
-                                    <div class="ms-actions-inner">
-                                        <div class="coupon">
-                                            <label for="input-text"> كود الخصم</label>
-                                            <div class="btn-sub">
-                                                <input type="text" name="coupon_code" class="input-text" id="coupon_code" value="" placeholder="Coupon code" required="">
-                                            <button type="submit" class="button rts-btn btn-primary" name="apply_coupon" value="Apply coupon">تطبيق</button>
+                            <div class="payment-details">
+                                <h3 class="text-right">تفاصيل الدفع</h3>
+                                <div class="form-check mb-5 pb-5">
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                    <label class="form-check-label fawry-text" for="flexRadioDefault1">
+                                        <img class="fawry" src="assets/images/fawry.png" alt="">
+                                        ادفع مع فوري
+                                    </label>
+                                  </div>
+                                  <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                                    <label class="form-check-label fawry-text" for="flexRadioDefault2">
+                                        <img class="cartimg" src="assets/images/pay-4.png" alt="">
+                                        <img class="cartimg" src="assets/images/pay-3.png" alt="">
+                                        بطاقة الائتمان أو الخصم
+                                    </label>
+                                    <form action="#">
+                                        <div class="single-input-wrapper">
+                                            <label for="email">اسم حامل البطاقة</label>
+                                            <input id="email" type="email" placeholder="مثال : هيثم أبو العز" required>
+                                        </div>
+                                        <div class="single-input-wrapper">
+                                            <label for="password"> رقم الكارت <span class="red">*</span></label>
+                                            <div class="password-container">
+                                                <input class="img-cart-input" id="text" type="password" placeholder="ادخل رقم الكارد" required>
+                                                <img class="img-cart-input-img" src="assets/images/pay-4.png" alt="">
                                             </div>
                                         </div>
-                                    </div>
-                                </form>
-                                <div class="mt-5 text-des-corse-cart">
-                                    <p>سعر الكورسات (2)</p>
-                                    <span class="black-color">4,000 جنية</span>
-                                </div>
-                                <div class="mt-3 text-des-corse-cart">
-                                    <p>قيمة الخصم</p>
-                                    <span class="red-color">950 جنية </span>
-                                </div>
-                                <div class="mt-3 text-des-corse-cart">
-                                    <p>سعر الكورسات (2)</p>
-                                    <span class="black-color">4,000 جنية</span>
-                                </div>
-                                <div class="mt-3 text-des-corse-cart">
-                                    <p class="total-price">إجمالي السعر </p>
-                                    <span class="blue-color">4,500 جنية</span>
-                                </div>
-                                <div class="btn-cart">
-                                   <a href="cart-cash.html"> <button class="add-to-cart"> إكمال الدفع</button></a>
-                                </div>
-                                <p class="text-center">بإكمال عملية الشراء، فإنك توافق على  <a class="blue-color" href="">شروط الخدمة </a></p>
-                            </div>
-                            <div class="payment-details two mt-3 mb-4">
-                                <img src="assets/images/right.png" alt="">
-                                <div class="text-payt">
-                                    <h3>جميع طرق الدفع مؤمنة </h3>
-                                    <p>​​​​​​​​​هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع الفقرات في الصفحة التي يقرأها</p>
-                                </div>
+                                        <div class="row">
+                                            <div class="col-lg-8">
+                                                <div class="single-input-wrapper">
+                                                    <label for="password">  تاريخ الإنتهاء <span class="red">*</span></label>
+                                                    <div class="password-container">
+                                                        <input id="text" type="password" placeholder=" شهر / سنة" required>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-4">
+                                                <div class="single-input-wrapper">
+                                                    <label for="password">  كود الأمان <span class="red">*</span></label>
+                                                    <div class="password-container">
+                                                        <input id="text" type="password" placeholder="1 2 3" required>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                  </div>
                             </div>
                         </div>
                         <div class="col-lg-4 col-12 rts-sticky-column-item">
-                            <div class="selected-courses ">
-                                <h3 class="text-center">الكورسات المختارة</h3>
-                                <div class="cart-det">
-                                    <div class="content-cart">
-                                        <div class="img-cart">
-                                            <img src="assets/images/629c77b6c2b33e46749581bb39f39d9c.png" alt="">
-                                        </div>
-                                        <div class="text-cart">
-                                            <p>التشطيبات المعمارية</p>
-                                            <p class="prise">2,000 جنية</p>
-                                        </div>
-                                    </div>
-                                    <div class="del">
-                                        <a href=""><img src="assets/images/close.png" alt=""></a>
-                                    </div>
+                            <div class="payment-details mt-3">
+                                <div class="mt-3 text-des-corse-cart">
+                                    <p class="total-price">إجمالي المشتريات </p>
+                                    <span class="blue-color">4,500 جنية</span>
                                 </div>
-                                <div class="cart-det">
-                                    <div class="content-cart">
-                                        <div class="img-cart">
-                                            <img src="assets/images/629c77b6c2b33e46749581bb39f39d9c.png" alt="">
-                                        </div>
-                                        <div class="text-cart">
-                                            <p>التشطيبات المعمارية</p>
-                                            <p class="prise">2,000 جنية</p>
-                                        </div>
-                                    </div>
-                                    <div class="del">
-                                        <a href=""><img src="assets/images/close.png" alt=""></a>
-                                    </div>
+                                <div class="btn-cart">
+                                    <a href=""> <button class="add-to-cart"> ابدا الدفع</button></a>
                                 </div>
-                                <div class="cart-det">
-                                    <div class="content-cart">
-                                        <div class="img-cart">
-                                            <img src="assets/images/629c77b6c2b33e46749581bb39f39d9c.png" alt="">
-                                        </div>
-                                        <div class="text-cart">
-                                            <p>التشطيبات المعمارية</p>
-                                            <p class="prise">2,000 جنية</p>
-                                        </div>
-                                    </div>
-                                    <div class="del">
-                                        <a href=""><img src="assets/images/close.png" alt=""></a>
-                                    </div>
-                                </div>
-                                <div class="cart-det mt-4">
-                                    <div class="content-cart">
-                                        <div class="img-cart">
-                                            <img src="assets/images/629c77b6c2b33e46749581bb39f39d9c.png" alt="">
-                                        </div>
-                                        <div class="text-cart">
-                                            <p>التشطيبات المعمارية</p>
-                                            <p class="prise">2,000 جنية</p>
-                                        </div>
-                                    </div>
-                                    <div class="del">
-                                        <a href=""><img src="assets/images/close.png" alt=""></a>
-                                    </div>
-                                </div>
-                               
                             </div>
                         </div>
                     </div>

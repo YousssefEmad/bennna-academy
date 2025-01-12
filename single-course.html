@@ -50,11 +50,11 @@
                             <nav>
                                 <ul>
                                     <li style="position: static;">
-                                        <a class="nav-link " href="index.html">الرئيسية</a>
+                                        <a class="nav-link active" href="index.html">الرئيسية</a>
                                     </li>
 
                                     <li>
-                                        <a class="nav-link active" href="courses.html">الكورسات المتاحة</a>
+                                        <a class="nav-link" href="courses.html">الكورسات المتاحة</a>
                                     </li>
                                     <li  style="position: static;">
                                         <a class="nav-link" href="instractors.html">المحاضرين</a>
@@ -75,7 +75,7 @@
                                 <div class="cart cart-icon">
                                     <i class="fa-regular fa-cart-shopping"></i>
                                     <span>0</span>
-                                    <div class="drop-cart">
+                                    <!-- <div class="drop-cart">
                                         <div class="item-cart">
                                             <div class="cart-det">
                                                 <div class="img-cart">
@@ -99,14 +99,36 @@
                                                 </div>
                                             </a>
                                         </div>
-                                    </div>
+                                    </div> -->
                                 </div>
                                 
                                 <div class="dark-not">
                                     <a href=""><i class="fa-regular fa-bell"></i> <div class="dot"></div></a>
-                                    <a href=""><i class="fa-regular fa-moon"></i></a>
+                                    <a href="javascript:void(0);" id="moon-toggle"><i class="fa-regular fa-moon"></i></a>
                                 </div>
                             </div>
+                            <div class="user-info">
+                                <img class="img-user-info" src="assets/images/preson2.jpg" alt="User Image">
+                                <div class="user-details">
+                                   <div class="item-cart">
+                                    <p class="user-name"><span>مرحبا بك 👋</span> يوسف عماد </p>
+                                    <p class="user-age"><a href="">
+                                        لوحه التحكم
+                                    </a> </p>
+                                    <p class="user-age"><a href="">
+                                     كورساتي
+                                    </a> </p>
+                                    <p class="user-age"><a href="">
+                                         تواصل
+                                    </a> </p>
+                                    
+                                    <a href="#" class="logout-link"><i class="fa-solid fa-right-from-bracket"></i> تسجيل الخروج</a>
+                                   </div>
+                                </div>
+                            </div>
+
+
+                            <img src="" alt="">
                             <div class="buttons-area">
                                 <a href="log-in.html" class="rts-btn btn-border">تسجيل دخول</a>
                                 <a href="registration.html" class="rts-btn btn-primary">تسجيل حساب</a>
@@ -139,7 +161,7 @@
                         <a href="index.html" class="main active">الرئيسية</a>
                     </li>
                     <li>
-                        <a class="main active" href="courses.html">الكورسات المتاحة</a>
+                        <a class="main" href="courses.html">الكورسات المتاحة</a>
                     </li>
                     <li>
                         <a href="instractors.html" class="main">المحاضرين</a>
@@ -161,35 +183,6 @@
                     <div class="header-right-area-one">
                         <div class="actions-area">
                             
-                            <div class="cart cart-icon">
-                                <i class="fa-regular fa-cart-shopping"></i>
-                                <span>0</span>
-                                <div class="drop-cart">
-                                    <div class="item-cart">
-                                        <div class="cart-det">
-                                            <div class="img-cart">
-                                                <img src="assets/images/629c77b6c2b33e46749581bb39f39d9c.png" alt="">
-                                            </div>
-                                            <div class="text-cart">
-                                                <p>التشطيبات المعمارية</p>
-                                                <p class="prise">2,000 جنية</p>
-                                            </div>
-                                            <div class="del">
-                                                <a href=""><img src="assets/images/close.png" alt=""></a>
-                                            </div>
-                                        </div>
-                                        <div class="total-det-cart">
-                                            <p>الاجمالي</p>
-                                            <p class="prise">2,000 جنية</p>
-                                        </div>
-                                        <a href="cart.html" class="btn-cart">
-                                           <div class="btn-1">
-                                             الإنتقال إلي عربة المشتريات
-                                           </div>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
                             <div class="dark-not">
                                 <a href=""><i class="fa-regular fa-bell"></i> <div class="dot"></div></a>
                             </div>
@@ -465,17 +458,17 @@
                                     <div class="accordion mt--30" id="accordionExample">
                                         <div class="accordion-item">
                                             <h2 class="accordion-header" id="headingOne">
-                                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                                                     <span>مقدمة في الهندسة المدنية</span>
                                                     <span>1 قسم - 1:00 ساعة</span>
                                                 </button>
                                             </h2>
-                                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                            <div id="collapseOne" class="accordion-collapse show collapse " aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                                                 <div class="accordion-body">
                                                     <!-- play single area start -->
                                                     <div class="accordion-item">
                                                         <h2 class="accordion-header" id="headingInnerOne">
-                                                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseInnerOne" aria-expanded="true" aria-controls="collapseInnerOne">
+                                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseInnerOne" aria-expanded="true" aria-controls="collapseInnerOne">
                                                                 <span>مقدمة في الهندسة المدنية - الجزء الأول</span>
                                                             </button>
                                                         </h2>
@@ -500,7 +493,7 @@
                                                     <!-- play single area start -->
                                                     <div class="accordion-item">
                                                         <h2 class="accordion-header" id="headingInnerTwo">
-                                                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseInnerTwo" aria-expanded="true" aria-controls="collapseInnerTwo">
+                                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseInnerTwo" aria-expanded="true" aria-controls="collapseInnerTwo">
                                                                 <span>مقدمة في الهندسة المدنية - الجزء الثاني</span>
                                                             </button>
                                                         </h2>
@@ -732,31 +725,31 @@
                                 <h5 class="title">تصميم المنشأت المعدنية  <span>( الكود المصري )</span></h5>
                                 <div class="details-cart-corse">
                                     <div class="mt-5 text-des-corse-cart">
-                                        <p><i class="fa fa-video"></i> الدروس :</p>
+                                        <p><img src="assets/images/Capture-removebg-preview.png" alt=""> الدروس :</p>
                                         <span class="black-color">340 فيديو مسجل</span>
                                     </div>
                                     <div class="mt-3 text-des-corse-cart">
-                                        <p><i class="fa fa-clock"></i> المدة: </p>
+                                        <p><img src="assets/images/2-removebg-preview.png" alt=""> المدة: </p>
                                         <span class="black-color">36:00 ساعة </span>
                                     </div>
                                     <div class="mt-3 text-des-corse-cart">
-                                        <p><i class="fa fa-calendar"></i> صلاحية الدورة :</p>
+                                        <p><img src="assets/images/3-removebg-preview.png" alt=""> صلاحية الدورة :</p>
                                         <span class="black-color">مدي الحياة</span>
                                     </div>
                                     <div class="mt-3 text-des-corse-cart">
-                                        <p><i class="fa fa-tag"></i> السعر :</p>
+                                        <p><img src="assets/images/4-removebg-preview.png" alt=""> السعر :</p>
                                         <span class="blue-color">2,000 جنية</span>
                                     </div>
                                     <div class="mt-3 text-des-corse-cart">
-                                        <p><i class="fa fa-certificate"></i> شهادة معتمدة من الأكاديمية</p>
+                                        <p><img src="assets/images/5-removebg-preview.png" alt=""> شهادة معتمدة من الأكاديمية</p>
                                     </div>
                                 </div>
                                 <div class="btn-cart btn-corse-cart">
-                                    <a href="" class="rts-btn1 btn-border mt-5">أضف إلي السلة</a>
+                                    <button class="add-to-cart">اضف الي السلة</button>
                                 </div>
                                 <div class="share-cart-corse">
-                                    <a href=""><p><i class="fa fa-share-alt"></i> مشاركة الدورة</p></a>
-                                   <a href=""> <p><i class="fa fa-save"></i> حفظ الدورة</p></a>
+                                    <div  class="share-btn"><p><i class="fa fa-share-alt"></i> مشاركة الدورة</p></div>
+                                    <a href=""> <p><img src="assets/images/save.png" alt=""> حفظ الدورة</p></a>
                                 </div>
                             </div>
                         </div>
@@ -766,9 +759,138 @@
             </div>
         </div>
     </div>
+
     <!-- rts course details area end -->
+    <div id="overlay1" class="overlay1"></div>
+<!-- Popup Share Form -->
+<div id="share-popup" class="share-popup">
+    <div class="popup-content">
+        <p class="text-popup-head">مشاركه مع الاصدقاء</p>
+        <img src="assets/images/share.png" alt="">
+        <h3>مشاركة الدورة</h3>
+        <div class="link-form">
+            <!-- <label for="share-link">رابط الدورة:</label> -->
+            <input type="text" id="share-link" value="http://example.com/your-course-link" readonly>
+            <button id="copy-link">نسخ الرابط</button>
+        </div>
+        <div class="social-links">
+            <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-whatsapp"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-telegram"></i></a>
+        </div>
+        <div class="text-start">
+            <button id="close-popup" class="close-popup">اغلاق</button>
+        </div>
+    </div>
+</div>
+<div id="download-alert" class="download-alert">
+    <div class="progress-bar-wrapper">
+        <div class="progress-bar"></div>
+    </div>
+    <div class="alert-downlod-corse-file">
+        <div class="text-center">
+            <img src="assets/images/dangerous-svgrepo-com.png" alt="">
+        </div>
+        <span>دخول مرفوض</span>
+    </div>
+    <button id="cancel-download" class="cancel-download">اغلاق</button>
+</div>
 
 
+<div class="cart-bar">
+    <div class="cart-header">
+        <h3 class="cart-heading">عربة التسوق الخاصة (3 عناصر)</h3>
+        <div class="close-cart"><i class="fal fa-times"></i></div>
+    </div>
+    <div class="product-area">
+        <div class="product-item">
+            <div class="product-detail">
+                <div class="product-thumb"><img src="assets/images/629c77b6c2b33e46749581bb39f39d9c.png" alt="product-thumb"></div>
+                <div class="item-wrapper">
+                    <div class="text-cart">
+                        <p>التشطيبات المعمارية</p>
+                        <p class="prise">2,000 جنية</p>
+                    </div>                        
+                </div>
+            </div>
+            <div class="cart-edit">
+                <div class="item-wrapper d-flex mr--5 align-items-center">
+                    <a href="#" class="delete-cart"><i class="fal fa-times"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="product-item">
+            <div class="product-detail">
+                <div class="product-thumb"><img src="assets/images/629c77b6c2b33e46749581bb39f39d9c.png" alt="product-thumb"></div>
+                <div class="item-wrapper">
+                    <div class="text-cart">
+                        <p>التشطيبات المعمارية</p>
+                        <p class="prise">2,000 جنية</p>
+                    </div>                        
+                </div>
+            </div>
+            <div class="cart-edit">
+                <div class="item-wrapper d-flex mr--5 align-items-center">
+                    <a href="#" class="delete-cart"><i class="fal fa-times"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="product-item">
+            <div class="product-detail">
+                <div class="product-thumb"><img src="assets/images/629c77b6c2b33e46749581bb39f39d9c.png" alt="product-thumb"></div>
+                <div class="item-wrapper">
+                    <div class="text-cart">
+                        <p>التشطيبات المعمارية</p>
+                        <p class="prise">2,000 جنية</p>
+                    </div>                        
+                </div>
+            </div>
+            <div class="cart-edit">
+                <div class="item-wrapper d-flex mr--5 align-items-center">
+                    <a href="#" class="delete-cart"><i class="fal fa-times"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="product-item">
+            <div class="product-detail">
+                <div class="product-thumb"><img src="assets/images/629c77b6c2b33e46749581bb39f39d9c.png" alt="product-thumb"></div>
+                <div class="item-wrapper">
+                    <div class="text-cart">
+                        <p>التشطيبات المعمارية</p>
+                        <p class="prise">2,000 جنية</p>
+                    </div>                        
+                </div>
+            </div>
+            <div class="cart-edit">
+                <div class="item-wrapper d-flex mr--5 align-items-center">
+                    <a href="#" class="delete-cart"><i class="fal fa-times"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="product-item">
+            <div class="product-detail">
+                <div class="product-thumb"><img src="assets/images/629c77b6c2b33e46749581bb39f39d9c.png" alt="product-thumb"></div>
+                <div class="item-wrapper">
+                    <div class="text-cart">
+                        <p>التشطيبات المعمارية</p>
+                        <p class="prise">2,000 جنية</p>
+                    </div>                        
+                </div>
+            </div>
+            <div class="cart-edit">
+                <div class="item-wrapper d-flex mr--5 align-items-center">
+                    <a href="#" class="delete-cart"><i class="fal fa-times"></i></a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="cart-bottom-area">
+        <span class="total-price">الاجمالي: <span class="price">2,000 جنية</span></span>
+        <a href="cart.html" class="view-btn cart-btn">الانتقال الي عربة المشتريات</a>
+    </div>
+</div>
         <!-- footer call to action area start -->
         <div id='footer'>
         </div>

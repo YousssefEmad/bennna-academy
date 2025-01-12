@@ -254,6 +254,12 @@ $(document).ready(function() {
                 $(".cart-bar").removeClass("show");
                 $("#anywhere-home").removeClass("bgshow");
             });
+            $(document).on('click', function (e) {
+              if (!$(e.target).closest('.cart-bar, .cart-icon').length) {
+                  $(".cart-bar").removeClass("show");
+                  $("#anywhere-home").removeClass("bgshow");
+              }
+          });
         },
 
         cartNumberIncDec: function(){
@@ -855,6 +861,69 @@ $(document).ready(function() {
     rtsJs.m();
 
 })(jQuery, window)
+$(document).ready(function () {
+  $('.play-vedio-wrapper').on('click', function (e) {
+      e.preventDefault();
+      $('#overlay1').fadeIn();
+      $('#download-alert').addClass('show');
+      
+      $('.progress-bar').css('width', '0%');
+      
+      setTimeout(function () {
+          $('.progress-bar').css('width', '100%');
+      }, 10);
+      
+      setTimeout(function () {
+        $('#download-alert').removeClass('show').addClass('hide');
+        $('#overlay1').fadeOut();
+    }, 4000);
+  });
+  $('#cancel-download').on('click', function () {
+    $('#download-alert').removeClass('show').addClass('hide');
+    $('#overlay1').fadeOut();
+});
+});
+
+$(document).ready(function () {
+  $('.share-btn').on('click', function () {
+      if ($('#share-popup').hasClass('showshary')) {
+          $('#share-popup').removeClass('showshary'); 
+          $('#overlay1').fadeOut(); 
+      } else {
+          $('#share-popup').addClass('showshary'); 
+          $('#overlay1').fadeIn(); 
+      }
+  });
+
+  $('#close-popup').on('click', function () {
+      $('#share-popup').removeClass('showshary'); 
+      $('#overlay1').fadeOut(); 
+  });
+
+  $('#overlay1').on('click', function () {
+      $('#share-popup').removeClass('showshary'); 
+      $('#overlay1').fadeOut(); 
+  });
+
+  $('#copy-link').on('click', function () {
+      var copyText = $('#share-link')[0];
+
+      navigator.clipboard.writeText(copyText.value).then(function() {
+          var message = $('<div class="copy-message">تم نسخ الرابط</div>');
+          $('#copy-link').after(message);    
+
+          setTimeout(function() {
+              message.fadeOut(function() {
+                  $(this).remove();
+              });
+          }, 2000);
+      }).catch(function(error) {
+          console.error('حدث خطأ أثناء النسخ: ', error);
+      });
+  });
+});
+
+
 const darkModeToggle = document.getElementById('moon-toggle');
 const darkModeCss = document.getElementById('dark-mode-css');
 

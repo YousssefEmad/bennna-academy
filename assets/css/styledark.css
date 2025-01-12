@@ -253,6 +253,24 @@ body {
     width: 350px;
     background-color: #232b38;
 }
+.user-name {
+    padding: 6px;
+    border: 2px solid #ffffff21;
+    border-radius: 11px;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 700;
+    padding-right: 15px;
+}
+.user-details p, .user-details a {
+    margin: 5px 0;
+    font-size: 18px;
+    color: #ffffff;
+}
+.logout-link {
+    color: red !important;
+    text-decoration: none;
+}
 .total-det-cart p {
     color: #ffffff;
 }
@@ -441,9 +459,8 @@ body {
 }
 .course-content-wrapper-main .accordion .accordion-header button {
     padding: 15px 25px;
-    background: #232b38;
-    display: flex
-;
+    background: #1a202c;
+    display: flex;
     align-items: center;
     box-shadow: none;
     justify-content: start;
@@ -467,7 +484,7 @@ body {
 }
 .course-content-wrapper-main .accordion .accordion-item .accordion-body {
     padding: 20px;
-    background-color: #232b38;
+    background-color: #1a202c;
 }
 .course-content-wrapper-main .accordion .accordion-item .accordion-body .play-vedio-wrapper .left span {
     color: #ffffff;
@@ -526,3 +543,63 @@ body {
     padding-bottom: 15px;
     border-bottom: 1px solid #ffffff1c;
 }
+.banner-right-img {
+    background-image: none !important;
+    background-position: center;
+    background-size: cover;
+}
+.cart-bar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    background: #232b38;}
+    .cart-bar .cart-header .cart-heading {
+        font-size: 14px;
+        font-weight: 600;
+        color: #ffffff;
+        font-family: var(--font-secondary);
+    }
+    .close-cart i {
+        transition: 0.5s;
+        font-size: 25px;
+        color: #fff;
+    }
+    .delete-cart {
+        font-size: 19px;
+        font-weight: 600;
+        color: #ffffff7d;
+    }    
+    .course-content-wrapper-main .accordion .accordion-header button span:last-child {
+        display: block;
+        color: #ffffff;
+        font-size: 16px;
+        background-color: #232b38;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 26px;
+        padding: 5px;
+        border-radius: 10px;
+    }
+    .side-bar.show {
+        background-color: #232b38;
+        overflow-y: auto;
+    }
+    .mobile-menu-main nav ul li a.main.active {
+        color: #ffffff;
+        border-bottom: 3px solid #ffffff;
+        max-width: 40px;
+    }
+    .mobile-menu-main nav ul li a.main {
+        color: #afafaf;
+    }
+    .prof-name-nav .right-prof .text p {
+        font-size: 16px;
+        font-weight: 500;
+        color: #ffffff;
+    }
+    .prof-name-nav .right-prof .text span {
+        color: #a9a9a9;
+    }
+    .side-bar button i {
+        color: #ffffff;
+    }

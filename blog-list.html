@@ -12,6 +12,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=El+Messiri:wght@400..700&family=IBM+Plex+Sans+Arabic:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" rel="stylesheet">
+
     <!-- fontawesome 6.4.2 -->
     <link rel="stylesheet" href="assets/css/plugins/fontawesome-6.css">
     <!-- swiper Css 10.2.0 -->
@@ -26,7 +27,7 @@
     <link rel="stylesheet" href="assets/css/metismenu.css">
     <!-- custom style css -->
     <link rel="stylesheet" href="assets/css/style.css">
-    <!-- <link rel="stylesheet" href="assets/css/styledark.css"> -->
+    <link rel="stylesheet" href="assets/css/styledark.css" id="dark-mode-css" disabled>
 </head>
 
 <body>
@@ -50,17 +51,17 @@
                             <nav>
                                 <ul>
                                     <li style="position: static;">
-                                        <a class="nav-link " href="index.html">الرئيسية</a>
+                                        <a class="nav-link active" href="index.html">الرئيسية</a>
                                     </li>
 
                                     <li>
-                                        <a class="nav-link " href="courses.html">الكورسات المتاحة</a>
+                                        <a class="nav-link" href="courses.html">الكورسات المتاحة</a>
                                     </li>
                                     <li  style="position: static;">
                                         <a class="nav-link" href="instractors.html">المحاضرين</a>
                                     </li>
                                     <li>
-                                        <a class="nav-link active" href="blog-list.html">مقالات هندسية</a>
+                                        <a class="nav-link" href="blog-list.html">مقالات هندسية</a>
                                     </li>
                                 </ul>
                             </nav>
@@ -75,7 +76,7 @@
                                 <div class="cart cart-icon">
                                     <i class="fa-regular fa-cart-shopping"></i>
                                     <span>0</span>
-                                    <div class="drop-cart">
+                                    <!-- <div class="drop-cart">
                                         <div class="item-cart">
                                             <div class="cart-det">
                                                 <div class="img-cart">
@@ -99,14 +100,36 @@
                                                 </div>
                                             </a>
                                         </div>
-                                    </div>
+                                    </div> -->
                                 </div>
                                 
                                 <div class="dark-not">
                                     <a href=""><i class="fa-regular fa-bell"></i> <div class="dot"></div></a>
-                                    <a href=""><i class="fa-regular fa-moon"></i></a>
+                                    <a href="javascript:void(0);" id="moon-toggle"><i class="fa-regular fa-moon"></i></a>
                                 </div>
                             </div>
+                            <div class="user-info">
+                                <img class="img-user-info" src="assets/images/preson2.jpg" alt="User Image">
+                                <div class="user-details">
+                                   <div class="item-cart">
+                                    <p class="user-name"><span>مرحبا بك 👋</span> يوسف عماد </p>
+                                    <p class="user-age"><a href="">
+                                        لوحه التحكم
+                                    </a> </p>
+                                    <p class="user-age"><a href="">
+                                     كورساتي
+                                    </a> </p>
+                                    <p class="user-age"><a href="">
+                                         تواصل
+                                    </a> </p>
+                                    
+                                    <a href="#" class="logout-link"><i class="fa-solid fa-right-from-bracket"></i> تسجيل الخروج</a>
+                                   </div>
+                                </div>
+                            </div>
+
+
+                            <img src="" alt="">
                             <div class="buttons-area">
                                 <a href="log-in.html" class="rts-btn btn-border">تسجيل دخول</a>
                                 <a href="registration.html" class="rts-btn btn-primary">تسجيل حساب</a>
@@ -139,13 +162,13 @@
                         <a href="index.html" class="main active">الرئيسية</a>
                     </li>
                     <li>
-                        <a class="main " href="courses.html">الكورسات المتاحة</a>
+                        <a class="main" href="courses.html">الكورسات المتاحة</a>
                     </li>
                     <li>
                         <a href="instractors.html" class="main">المحاضرين</a>
                     </li>
                     <li>
-                        <a class="main active" href="blog-list.html">مقالات هندسية</a>
+                        <a class="main" href="blog-list.html">مقالات هندسية</a>
                     </li>
                 </ul>
             </nav>
@@ -161,35 +184,6 @@
                     <div class="header-right-area-one">
                         <div class="actions-area">
                             
-                            <div class="cart cart-icon">
-                                <i class="fa-regular fa-cart-shopping"></i>
-                                <span>0</span>
-                                <div class="drop-cart">
-                                    <div class="item-cart">
-                                        <div class="cart-det">
-                                            <div class="img-cart">
-                                                <img src="assets/images/629c77b6c2b33e46749581bb39f39d9c.png" alt="">
-                                            </div>
-                                            <div class="text-cart">
-                                                <p>التشطيبات المعمارية</p>
-                                                <p class="prise">2,000 جنية</p>
-                                            </div>
-                                            <div class="del">
-                                                <a href=""><img src="assets/images/close.png" alt=""></a>
-                                            </div>
-                                        </div>
-                                        <div class="total-det-cart">
-                                            <p>الاجمالي</p>
-                                            <p class="prise">2,000 جنية</p>
-                                        </div>
-                                        <a href="cart.html" class="btn-cart">
-                                           <div class="btn-1">
-                                             الإنتقال إلي عربة المشتريات
-                                           </div>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
                             <div class="dark-not">
                                 <a href=""><i class="fa-regular fa-bell"></i> <div class="dot"></div></a>
                             </div>
