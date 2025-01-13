@@ -33504,6 +33504,23 @@ border-radius: 28px;
   z-index: 9999;
   transition: top 0.3s ease-in-out;
 }
+
+.success-popup {
+  display: none;
+  position: fixed;
+  bottom: 45%;
+  right: 40%;
+  width: 25em;
+  background-color: #ffffff;
+  color: #000000;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  letter-spacing: normal;
+  z-index: 99999 !important;
+  box-shadow: 0 5px 12px 0 rgba(0, 0, 0, 0.05);
+}
 .showshary{
   display: block;
   position: fixed;
@@ -33608,6 +33625,22 @@ font-size: 40px;
   background-color: #f63c3c;
   transition: all 0.3s;
 }
+#del-popup {
+  /* position: absolute; */
+  width: max-content;
+  top: 0px;
+  right: -25px;
+  background-color: #ffffff;
+  color: #ffffff;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 7px;
+  cursor: pointer;
+  transition: color 0.3s;
+  box-shadow: 0 3px 6px 0 rgba(201, 1, 1, 0.29);
+  background-color: #014eed;
+  transition: all 0.3s;
+}
 .close-popup:hover {
   color: #f44336; 
 }
@@ -33637,7 +33670,7 @@ font-size: 40px;
 }
 .share-btn{
   cursor: pointer;
-
+  width: max-content;
 }
 .overlay1 {
   display: none; 
@@ -33776,4 +33809,9 @@ font-size: 40px;
 }
 .alert-downlod-corse-file{
   padding-top: 15px;
+}
+.del-alert-btn{
+  display: flex;
+  gap: 15px;
+  justify-content: center;
 }

@@ -861,6 +861,7 @@ $(document).ready(function() {
     rtsJs.m();
 
 })(jQuery, window)
+
 $(document).ready(function () {
   $('.play-vedio-wrapper').on('click', function (e) {
       e.preventDefault();
@@ -923,37 +924,49 @@ $(document).ready(function () {
   });
 });
 
+// $(document).ready(function () {
+//   $('.del-popup').on('click', function (e) {
+//       e.preventDefault();
+//       $('#overlay1').fadeIn();
+//       $('#share-popup').fadeOut();
+//        $('#success-popup').fadeIn();
+      
+//       $('.progress-bar').css('width', '0%');
+      
+//       setTimeout(function () {
+//           $('.progress-bar').css('width', '100%');
+//       }, 10);
+      
+//       setTimeout(function () {
+//         $('#success-popup').removeClass('show').addClass('hide');
+//         $('#overlay1').fadeOut();
+//     }, 3000);
+//   });
+// });
 
 const darkModeToggle = document.getElementById('moon-toggle');
 const darkModeCss = document.getElementById('dark-mode-css');
 
+if (localStorage.getItem('darkMode') === 'enabled') {
+    darkModeCss.disabled = false; 
+    document.querySelector('#moon-toggle i').classList.add('fa-sun'); 
+} else {
+    darkModeCss.disabled = true; 
+    document.querySelector('#moon-toggle i').classList.add('fa-moon');
+}
+
 darkModeToggle.addEventListener('click', function() {
     if (darkModeCss.disabled) {
-        darkModeCss.disabled = false;
+        darkModeCss.disabled = false; 
+        localStorage.setItem('darkMode', 'enabled'); 
+        document.querySelector('#moon-toggle i').classList.remove('fa-moon');
+        document.querySelector('#moon-toggle i').classList.add('fa-sun'); 
     } else {
-        darkModeCss.disabled = true;
+        darkModeCss.disabled = true; 
+        localStorage.setItem('darkMode', 'disabled'); 
+        document.querySelector('#moon-toggle i').classList.remove('fa-sun');
+        document.querySelector('#moon-toggle i').classList.add('fa-moon'); 
     }
-});
-document.getElementById('togglePassword').addEventListener('click', function () {
-  const passwordField = document.getElementById('password');
-  const icon = this.querySelector('i');
-
-  if (passwordField.type === 'password') {
-      passwordField.type = 'text';
-      icon.classList.remove('fa-eye');
-      icon.classList.add('fa-eye-slash'); 
-  } else {
-      passwordField.type = 'password';
-      icon.classList.remove('fa-eye-slash');
-      icon.classList.add('fa-eye');
-  }
-});
-document.querySelectorAll('.confirm-input input[type="number"]').forEach(function(input) {
-  input.addEventListener('input', function() {
-      if (this.value.length > 1) {
-          this.value = this.value.slice(0, 1); 
-      }
-  });
 });
 
 var player = videojs('my-video');
