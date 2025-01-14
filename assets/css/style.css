@@ -29947,7 +29947,8 @@ header.header-three .sub-dropdown .submenu.third-lvl.base {
 
 .login-page-form-area {
   position: relative;
-  max-width: max-content;
+  /* max-width: max-content; */
+  width: 490px;
   height: max-content;
   border-radius: 35px;
   border: 1px solid #DDD8F9;
@@ -32897,6 +32898,7 @@ swiper-slide img {
   display: flex;
   align-items: center;
   gap: 15px;
+  margin-top: 20px;
 }
 .payment-details.two .text-payt h3{
   color: #101828;
