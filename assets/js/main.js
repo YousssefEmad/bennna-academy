@@ -922,50 +922,56 @@ $(document).ready(function () {
           console.error('حدث خطأ أثناء النسخ: ', error);
       });
   });
+
+  $('.del-popup').on('click', function (e) {
+      e.preventDefault();
+  
+      $('#share-popup').fadeOut();
+      $('#success-popup').fadeIn();
+      $('#overlay1').fadeIn();
+  
+      var text = "تم حذف الكورس بنجاح!";
+      var i = 0;
+      var speed = 100;
+  
+      var interval = setInterval(function () {
+          $('#success-text').append(text[i]);
+          i++;
+          if (i === text.length) {
+              clearInterval(interval); 
+              showCheckmark(); 
+          }
+      }, speed);
+  
+      function showCheckmark() {
+          $('#checkmark').fadeIn();
+      }
+  
+      setTimeout(function () {
+          $('#success-popup').fadeOut();
+          $('#overlay1').fadeOut();
+          location.reload();
+      }, 3000);
+  });
 });
 
-// $(document).ready(function () {
-//   $('.del-popup').on('click', function (e) {
-//       e.preventDefault();
-//       $('#overlay1').fadeIn();
-//       $('#share-popup').fadeOut();
-//        $('#success-popup').fadeIn();
-      
-//       $('.progress-bar').css('width', '0%');
-      
-//       setTimeout(function () {
-//           $('.progress-bar').css('width', '100%');
-//       }, 10);
-      
-//       setTimeout(function () {
-//         $('#success-popup').removeClass('show').addClass('hide');
-//         $('#overlay1').fadeOut();
-//     }, 3000);
-//   });
-// });
 
 const darkModeToggle = document.getElementById('moon-toggle');
 const darkModeCss = document.getElementById('dark-mode-css');
 
 if (localStorage.getItem('darkMode') === 'enabled') {
     darkModeCss.disabled = false; 
-    document.querySelector('#moon-toggle i').classList.add('fa-sun'); 
 } else {
     darkModeCss.disabled = true; 
-    document.querySelector('#moon-toggle i').classList.add('fa-moon');
 }
 
 darkModeToggle.addEventListener('click', function() {
     if (darkModeCss.disabled) {
         darkModeCss.disabled = false; 
         localStorage.setItem('darkMode', 'enabled'); 
-        document.querySelector('#moon-toggle i').classList.remove('fa-moon');
-        document.querySelector('#moon-toggle i').classList.add('fa-sun'); 
     } else {
         darkModeCss.disabled = true; 
         localStorage.setItem('darkMode', 'disabled'); 
-        document.querySelector('#moon-toggle i').classList.remove('fa-sun');
-        document.querySelector('#moon-toggle i').classList.add('fa-moon'); 
     }
 });
 
