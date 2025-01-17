@@ -9,6 +9,13 @@ body {
     -webkit-text-size-adjust: 100%;
     -webkit-tap-highlight-color: transparent;
 }
+ul li {
+    font-size: var(--font-size-b1);
+    line-height: var(--line-height-b1);
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: #d9d9d9;
+}
 .header--sticky {
     position: relative;
     top: 0;
@@ -96,7 +103,7 @@ body {
     color: #ffffff;
 }
 .banner-content-one p.disc {
-        max-width: 75%;
+        max-width: 100%;
         color: #ffffff;
 }
 .banner-content-one .rts-btn.btn-border {
@@ -606,3 +613,21 @@ body {
     .text-popup-head {
         color: #ffffff;
     }
+    .rts-btn{
+        font-size: 16px;
+    }
+    .share-popup .link-form button {
+        font-size: 18px;
+    }
+    #close-popup {
+        font-size: 16px;
+    }
+    .ban-content .rts-btn {
+        font-size: 18px;
+        border: none;
+    }
+    .img-blog .author-date .author-area span {
+        color: #fff;
+        font-size: 15px;
+    }
+    
