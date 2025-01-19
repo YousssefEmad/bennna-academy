@@ -33763,9 +33763,9 @@ font-size: 40px;
 .download-alert {
   display: none;
   position: fixed;
-  bottom: 45%;
+  bottom: 40%;
   right: 40%;
-  width: 25em;
+  width: 21em;
   background-color: #ffffff;
   color: #000000;
   padding: 10px 20px;
@@ -33796,37 +33796,38 @@ font-size: 40px;
 
 .download-alert span {
   display: block;
-  font-size: 18px;
+  font-size: 19px;
   text-align: center;
   font-weight: 700;
-  margin-bottom: 7px;
+  margin-bottom: 30px;
 }
 
 .download-alert.show {
   display: block;
 }
 .cancel-download {
-  background-color: #ff6347;
+  background-color: #c2272d;
   color: white;
-  padding: 5px 10px;
-  font-size: 14px;
+  padding: 10px 5px;
+  font-size: 18px;
   border: none;
   border-radius: 3px;
   cursor: pointer;
   margin-top: 10px;
-  width: max-content;
+  width: 100%;
   text-align: center;
 }
 
 .cancel-download:hover {
-  background-color: #ff4500;
+  background-color: #000;
 }
 .alert-downlod-corse-file img{
-  height: 100px;
-  margin-bottom: 10px;
+  height: 70px;
+  background-color: #fff;
+  border-radius: 50px;
 }
 .alert-downlod-corse-file{
-  padding-top: 15px;
+  padding-top: 25px;
 }
 .del-alert-btn{
   display: flex;
@@ -33921,4 +33922,18 @@ font-size: 40px;
   height: 50px;
   width: 50px;
   border-radius: 50px;
+}
+.x-close-alert-des{
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 45px !important;;
+  color: #4e4e4e;
+}
+.x-close-alert{
+  position: absolute;
+  top: -40px;
+  right: 39%;
+}
+.x-close-alert p{
+  line-height: 0;
 }
